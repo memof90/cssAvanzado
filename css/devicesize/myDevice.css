@@ -1,0 +1,19 @@
+/* Estilos para pantallas con tamaño especificos */
+
+@media all and (min-device-height:400px) and (max-device-height:600px){
+    body{
+        flex-flow: column;
+        background-color: #777900;
+        color: #ffffff;
+    }
+    .sideBar > ul > li{
+        display: inline;
+    }
+
+    .socialBar {
+        display: inline;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+    }
+}

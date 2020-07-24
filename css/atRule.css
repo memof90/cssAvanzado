@@ -1,0 +1,40 @@
+/* Importar otro archivo */
+@import url(/css/atRule2.css);
+
+
+.container{
+    background-color: lawngreen;
+    align-items: center;
+    border-radius: 15px;
+    border: 8px solid #cccccc;
+    padding: 40px;
+    margin: 100px auto;
+    width: 300px;
+    height: 100%;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+/* importar otras typografias  */
+@font-face{
+    font-family: "Raleway";
+    src: url("/css/Font/Raleway-SemiBold.ttf");
+    font-weight: 400;
+    font-style: normal;
+}
+
+p{
+    font-family: "Raleway";
+}
+/* screen, project, handheld, o all */
+@media print{
+    body{
+        font-size: 10pt;
+        font-family: times,serif;
+    }
+
+    .container{
+        column-count: 2;
+        border: none;
+    }
+}
